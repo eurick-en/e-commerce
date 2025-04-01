@@ -9,7 +9,7 @@ export default function SuccessPage() {
   const sessionId = searchParams.get("session_id");
   const [loading, setLoading] = useState(true);
   const [session, setSession] = useState<any>(null);
-  const router = useRouter(); // Hook para navegação
+  const router = useRouter(); 
 
   useEffect(() => {
     const fetchSession = async () => {
@@ -26,10 +26,10 @@ export default function SuccessPage() {
 
     fetchSession();
 
-    // Redireciona para a página inicial após 5 segundos
+
     setTimeout(() => {
-      router.push("/"); // Navega para a home
-    }, 5000); // 5 segundos
+      router.push("/"); 
+    }, 5000); 
   }, [sessionId, router]);
 
   return (

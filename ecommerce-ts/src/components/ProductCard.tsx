@@ -21,7 +21,7 @@ export default function ProductCard({ id, name, price, image }: ProductProps) {
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
-      {/* Atualizando para usar next/image */}
+      {}
       <div className="relative w-full h-40">
         <Image src={image} alt={name} layout="fill" objectFit="cover" className="rounded-md" />
       </div>
@@ -37,3 +37,5 @@ export default function ProductCard({ id, name, price, image }: ProductProps) {
     </div>
   );
 }
+
+

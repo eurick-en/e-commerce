@@ -11,7 +11,7 @@ export default function CheckoutPage() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             items: [
-              { name: "Produto Teste", price: 1000, quantity: 1 },
+              { name: "Produto Teste", price: 1, quantity: 1 },
             ],
           }),
         });
